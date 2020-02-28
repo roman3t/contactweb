@@ -1,0 +1,124 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+h1{
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 600;
+}
+h2{
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.header{
+    background: linear-gradient(to right, rgb(34, 63, 56), rgb(43, 79, 83));
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .3);
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.625rem;    
+}
+
+@media (min-width: 768px){
+    .main{
+        justify-content: start;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+}
+
+.contenido{
+    background-color: #DDD;
+    display: flex;
+    margin: 0.5rem auto;
+    width: calc(96% - 10px);
+    flex-direction: column;
+}
+
+.company, .email, .phone{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.icon{
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+}
+
+
+.contenido:last-of-type{
+    border-bottom: 0;
+}
+
+@media (min-width: 768px){
+    .contenido{
+        width: 350px;
+    }
+}
+
+p{
+    margin: 10px;
+    font-weight: 400;
+}
+
+span{
+    font-weight: 600;
+}
+
+
+.map{
+    background: #000;
+    width: 90%;
+    margin: 0 auto;
+    height: 100px;
+}
+
+/* Colapsar */
+ .btncolapso {
+    background-color: #ddd;
+    color: #123321;
+    cursor: pointer;
+    padding: 22px;
+    border: none;
+    text-align: left;
+    font-weight: 700;
+  }
+  .btncolapso:hover {
+    background-color: #ccc;
+  }
+
+ .active, .collapse:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f2f3f1;
+    border: 2px solid #ccc;
+  } 
+
+  .personal {
+      display: none;
+  }
